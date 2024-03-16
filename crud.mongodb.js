@@ -51,6 +51,10 @@ db.courses.insertMany([
 ])
 
 
-let a=db.courses.find({assignments:{$gt:12}})
+// let a=db.courses.find({assignments:{$gt:12}})
 
-console.log(a)
+// console.log(a)
+
+let b=db.courses.find({price:0});
+console.log(b);
+console.log(b.count);
